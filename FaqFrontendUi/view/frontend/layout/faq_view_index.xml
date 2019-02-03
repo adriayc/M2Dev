@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+
+    </head>
+
+    <body>
+        <!--Ejemplos de acciones que se pueden realizar con los layout-->
+        <!--<referenceContainer name="main.content" remove="true"/>-->
+
+        <referenceContainer name="content">
+            <block class="M2Dev\FaqFrontendUi\Block\FaqList"
+                    name="faqlist"
+                    as="faqlist"
+                    template="M2Dev_FaqFrontendUi::faqlist.phtml"
+                    cacheable="false">  <!--Evita que se guarde en cache-->
+
+                <!--LLamar un template interno-->
+                <!--<block name="saludo" as="saludo" template="M2Dev_FaqFrontendUi::saludo.phtml"/>-->
+            </block>
+        </referenceContainer>
+    </body>
+</page>

@@ -1,0 +1,15 @@
+<?php
+/** @var \M2Dev\FaqFrontendUi\Block\FaqList $block */   //Copiamos la referencia de la clase que contiene el directorio Block
+$faqlist = $block->getFaqSampleList();
+?>
+
+<h1>Hola desde el template faqlist.phtml</h1>
+
+<!--Imprimir el contenido del template interno-->
+<?php echo $block->getChildHtml('saludo'); ?>
+<ul>
+    <?php foreach ($faqlist as $faq): ?>
+        <li><?= $faq[0]; ?></li>
+        <li><?= $faq[1]; ?></li>
+    <?php endforeach; ?>
+</ul>

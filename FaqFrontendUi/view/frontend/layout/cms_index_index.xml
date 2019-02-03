@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+
+    <!--LAYOUT DEL HOMEPAGE-->
+    <head>
+
+    </head>
+
+    <body>
+        <!--Elimina el contenedor del footer del Homepage-->
+        <!--<referenceContainer name="footer-container" remove="true"/>-->
+    </body>
+</page>
