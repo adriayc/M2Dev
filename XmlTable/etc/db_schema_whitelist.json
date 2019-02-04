@@ -1,0 +1,9 @@
+{
+    "mytable": {
+        "column": {
+            "name": true,
+            "text": true,
+            "colt": true
+        }
+    }
+}
