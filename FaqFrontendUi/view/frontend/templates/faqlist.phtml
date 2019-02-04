@@ -9,7 +9,10 @@ $faqlist = $block->getFaqSampleList();
 <?php echo $block->getChildHtml('saludo'); ?>
 <ul>
     <?php foreach ($faqlist as $faq): ?>
-        <li><?= $faq[0]; ?></li>
-        <li><?= $faq[1]; ?></li>
+<!--        <li>--><?//= $faq[0]; ?><!--</li>-->
+<!--        <li>--><?//= $faq[1]; ?><!--</li>-->
+        <li><?php echo $faq->getQuestion(); ?></li>
+        <li><?php echo $faq->getAnswer(); ?></li>
+        <li><?php echo $faq->getTag(); ?></li>
     <?php endforeach; ?>
 </ul>

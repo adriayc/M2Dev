@@ -2,6 +2,8 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
     <module name="M2Dev_FaqFrontendUi" setup_version="1.0.0">
         <sequence>
+            <!--El modulo principal hace uso de este modulo externo-->
+            <module name="M2Dev_Faq"/>
         </sequence>
     </module>
 </config>
